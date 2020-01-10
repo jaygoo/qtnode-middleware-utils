@@ -7,7 +7,7 @@ const { spawn, exec } = require('child_process');
 
 
 exports.execPromise = function (cmd, opts) {
-    return new Promise(async (resolve, reject) => {
+    return new Promise( (resolve, reject) => {
         let ls = exec(cmd, opts);
 
         let result = '' ;
@@ -34,7 +34,7 @@ exports.execPromise = function (cmd, opts) {
 };
 
 exports.spawnPromise = async (cmd, args = [], opts = {}) => {
-    return new Promise(async (resolve, reject) => {
+    return new Promise( (resolve, reject) => {
         const ls = spawn(cmd, args, opts);
 
         let result = '' ;

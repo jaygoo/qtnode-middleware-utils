@@ -12,7 +12,6 @@ async function a (next) {
     cmd += ` ${ path.resolve(process.cwd(), 'entry/')}`;
     cmd += ` --rulesdir  ${path.resolve(__dirname, '../')}`;
     cmd += ` ${ path.resolve(process.cwd(), 'src/')} ${ path.resolve(process.cwd(), 'wpconf/')}`;
-    console.log(cmd);
 
     await childProcess.execPromise(cmd, {encoding: 'utf8', cwd: process.cwd()})
 
@@ -28,7 +27,7 @@ async function a (next) {
     //     {encoding: 'utf8', cwd: process.cwd()}
     // )
         .then((data) => {
-            priter.data(data);
+            priter.data('then' + data);
             let arrErr = data.match(/problems \((.*?) errors/);
             let arrWaring = data.match(/errors, (.*?) warnings/);
             if(arrErr != null && arrErr != null)
@@ -38,8 +37,7 @@ async function a (next) {
 
         })
         .catch((data) => {
-            console.log(data, '----');
-            priter.data(data);
+            priter.data('catch' + data);
 
 
             let arrErr = data.match(/problems \((.*?) errors/);
