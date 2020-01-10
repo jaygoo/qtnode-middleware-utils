@@ -3,12 +3,12 @@ const http = require('http');
 const fs = require('fs');
 const unzip = require('unzip');
 
-let downFlag = false;
+let downFlag;
 downFlag = false;
 const printer = require('qtnode-middleware-console');
 
 
-exports.download = async (url, dir, fileName) => {
+export let download = async (url, dir, fileName) => {
 
     return new Promise((resolve, reject) => {
         printer.info('开始下载: ' + url + fileName);
@@ -61,7 +61,7 @@ exports.download = async (url, dir, fileName) => {
 
 };
 
-exports.unzip = async (zip_path, taget_path) => {
+export let unzipasync = async (zip_path, taget_path) => {
     return new Promise((resolve, reject) => {
         //判断压缩文件是否存在
         if (!fs.existsSync(zip_path)) {

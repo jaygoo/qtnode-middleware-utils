@@ -4,6 +4,8 @@ const priter = require('qtnode-middleware-console');
 const { spawn, exec } = require('child_process');
 
 
+
+
 exports.execPromise = function (cmd, opts) {
     return new Promise(async (resolve, reject) => {
         let ls = exec(cmd, opts);

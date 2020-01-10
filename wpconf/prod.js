@@ -8,7 +8,7 @@ function resolve (dir) {
 
 module.exports = {
     mode: 'production',
-    devtool: 'inline-source-map',
+    devtool: 'source-map',
     target: 'node',
 
     entry: {

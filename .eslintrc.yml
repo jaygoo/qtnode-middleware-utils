@@ -11,8 +11,6 @@ env:
 
 extends: 'eslint:recommended'
 
-
-
 parserOptions:
   ecmaVersion: 6
   sourceType": module
@@ -87,3 +85,6 @@ rules:
     - 2
   no-extra-boolean-cast:
     - 1
+  no-unused-vars:
+    - 0
+    - args: "none"

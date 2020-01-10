@@ -1,5 +1,5 @@
 
-module.exports = function (fun, delay) {
+let sleep = (fun, delay)=> {
   return new Promise(resolve => {
     setTimeout(function () {
         fun();
@@ -7,3 +7,4 @@ module.exports = function (fun, delay) {
     }, delay);
   });
 };
+export {sleep};
