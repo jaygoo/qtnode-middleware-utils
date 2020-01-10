@@ -1,7 +1,10 @@
 'use strict';
 
-export childProcess from '../src/utils/childProcess';
-export fileUtils from '../src/utils/fileUtils';
-export sleep from '../src/utils/sleep';
+const childProcess = require('../src/utils/childProcess');
+const fileUtils = require('../src/utils/fileUtils');
+const sleep = require('../src/utils/sleep');
+export {childProcess, fileUtils, sleep};
+
+
 
 
