@@ -1,9 +1,9 @@
 
-// import {sleep} from '../src/utils/async';
-import {spawnPromise} from '../src/utils/childProcess';
-import * as fileUtils from '../src/utils/fileUtils';
+import * as async from '../src/utils/async';
+import * as childProcess from '../src/utils/childProcess';
 import * as time from '../src/utils/time';
 
+export {async, childProcess, time};
 
 
-export {spawnPromise};
+

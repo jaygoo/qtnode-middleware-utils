@@ -16,7 +16,9 @@
   "homepage": "https://github.com/jaygoo/qtnode-templeate-utils-js/blob/master/README.MD",
   "keywords": [],
   "license": "ISC",
-  "dependencies": {},
+  "dependencies": {
+    "qtnode-middleware-console": "^1.0.5"
+  },
   "devDependencies": {
     "babel-core": "^6.26.3",
     "babel-eslint": "^10.0.3",
