@@ -1,5 +1,5 @@
-# qtnod-templete-npm-js
+# qtnod-templete-utils-js
 
 ```
-    基于es6的npm包模板
+    工具包
 ```
